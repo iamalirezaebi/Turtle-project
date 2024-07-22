@@ -7,3 +7,7 @@
 #### Second challenge : draw a dashed line 
   this was a bit more challenging and i found two methods to do this the first one : using pen down and pen up; and the second
   one : using painting white and black one in a row
+#### Third challenge: draw triangle, rectangle, .. to six angle!
+  and the challenge continues to increase! in this part mathematics comes in the way and i should calculate the angles of each 
+  shape to draw them back to back; but witrh 60, 90, 108,.. the project got solved, fortunately!:)
+  
