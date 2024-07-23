@@ -49,3 +49,40 @@
   random_walk(200)
   Calls the random_walk function with 200 steps.
   Set Up Screen Exit:
+#### Fifth challenge: Draw a Spirograph
+  This code creates a turtle graphics program in Python using the turtle module. The program makes a turtle named 
+ "theresa" draw a spirograph, changing colors as it rotates. Here's a detailed explanation of what the code does:
+  Import Modules:
+  import random
+  import turtle
+  Set Up Turtle and Screen:
+  theresa = turtle.Turtle()
+  turtle.colormode(255)
+  theresa.speed("fastest")
+  Creates a turtle object named "theresa".
+  Sets the color mode of the turtle to RGB (with values ranging from 0 to 255).
+  Sets the speed of the turtle to the fastest setting.
+  Define decide_color Function:
+  def decide_color():
+      r = random.randint(0, 255)
+      g = random.randint(0, 255)
+      b = random.randint(0, 255)
+      color_tuple = (r, g, b)
+      return color_tuple
+  This function generates a random color by creating a tuple with three random integers (r, g, b) each between 0 and 255.
+  Returns the color tuple.
+  Define draw_spirograph Function:
+  def draw_spirograph(size_of_gap):
+      for _ in range(int(360 / size_of_gap)):
+          theresa.color(decide_color())
+          theresa.circle(100)
+          theresa.setheading(theresa.heading() + size_of_gap)
+  This function makes the turtle draw a spirograph.
+  It takes an integer size_of_gap as an argument, which specifies the gap size between each circle.
+  The loop runs 360 / size_of_gap times:
+  Sets the turtle's color to a random color using decide_color().
+  Draws a circle with a radius of 100 units.
+  Changes the turtle's heading by adding size_of_gap degrees to the current heading.
+  Execute Spirograph Drawing:
+  draw_spirograph(5)
+  Calls the draw_spirograph function with a gap size of 5 degrees.
